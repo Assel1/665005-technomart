@@ -1,6 +1,6 @@
 # Личный проект «Техномарт»
 
-* Студент: [Assel Mukhamejanova](https://up.htmlacademy.ru/htmlcss/20/user/665005).
+* Студент: [Assel Mukhamejanova](https://htmlacademy.ru/profile/id665005).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
