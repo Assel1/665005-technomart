@@ -1,0 +1,37 @@
+
+
+.skroll {
+  width: 400px;
+  background: black;
+  height: 5px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.skroll_left,
+.skroll_right {
+  position: absolute;
+  display: block;
+  width: 20px;
+  background: red;
+  height: 20px;
+  border-radius: 50%;
+  top: -8px;
+  z-index: 1;
+}
+
+.skroll_left {
+  left: 50px;
+}
+
+.skroll_right {
+  right: 50px;
+}
+
+.skroll_field {
+  width: 293px;
+  height: 5px;
+  background: green;
+  position: absolute;
+  left: 54px;
+}

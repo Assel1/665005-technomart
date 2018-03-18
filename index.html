@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,9 +15,13 @@
             <a class="main-header-logo">
               <img src="img/logo.png" width="220px" height="47px" alt="логотип магазина «Техномарт»">
             </a>
-            <form>
-                <p><input type="search" name="q" placeholder="Поиск:">
-                    <input type="submit" value="Найти"></p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="visually-hidden" for="search">Поиск</label>
+                    <span class="search-icon"></span>
+                    <input class="search" type="search" name="search" id="search" placeholder="Поиск:">
+                    <button class="button" type="submit">Найти</button>
+                </p>
             </form>
             <a href="#" class="bookmarks">Закладки: 0</a>
             <a href="#" class="cart">Корзина: 0</a>
@@ -27,7 +33,7 @@
             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="user-navigation">
-            <a href="#" class="usermenu">Войти</a>
+            <a href="login.html " class="usermenu">Войти</a>
             <a href="#" class="usermenu">Регистрация</a>
         </div>
         <nav class="main-navigation">
@@ -46,7 +52,7 @@
     </header>
 
     <main class="container">
-        <h2 class="hidden-content">демонстрационный блок</h2>
+        <h2 class="visually-hidden">демонстрационный блок</h2>
         <section class="promo-block">
             <div class="promo-mat">
                 <p class="promo-mat-text">Материалы</p>
@@ -168,14 +174,7 @@
                     </p>
                 </li>
             </ul>
-            <!--было жалко стирать
-            <div class="product2">
 
-                Перфоратор BOSCH BFG 3000
-            </div>
-            <div class="product3">Перфоратор BOSCH BFG 6000</div>
-            <div class="product4">Перфоратор BOSCH BFG 2000</div>
--->
         </section>
         <section class="popular-manufacturers">
             <div>
@@ -205,7 +204,7 @@
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
         </aside>
         <section>
-            <h2 class="hidden-content">о нас, контакты</h2>
+            <h2 class="visually-hidden">о нас, контакты</h2>
             <div class="about-us-index">
                 <h3>компания «Техномарт»</h3>
                 <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах. <br> Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
@@ -257,20 +256,31 @@
     </footer>
 
     <section class="modal modal-write-us">
-        <h2 class="hidden-content">форма для отправки сообщения</h2>
-        <span>Ваше имя:</span>
-        <!-- Здесь будет форма -->
-        <span>Ваш e-mail:</span>
-        <!-- Здесь будет форма -->
-        <span>Текст письма:</span>
-        <!-- Здесь будет форма -->
-        <button class="modal-close">x</button>
-        <button>Отправить</button>
+        <h2 class="visually-hidden">форма для отправки сообщения</h2>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-name">Ваше имя</label>
+                <input class="user-name" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p>
+                <label for="email">Ваш e-mail</label>
+                <input class="email" id="email" type="text" name="email" placeholder="Для отправки ответа">
+            </p>
+            <p>
+                <label for="write-us-text">Текст письма</label>
+                <input class="write-us-text" id="write-us-text" type="text" name="write-us-text" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <span class="modal-close">x</span>
+        <p>
+            <img src="img/map.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 
