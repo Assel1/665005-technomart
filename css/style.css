@@ -1,37 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "Cuprum", Arial Narrow, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    width: 940px;
+    height: 60px;
+    background-color: #32425c;
+    font-family: Cuprum;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+
+}
+
+.site-navigation,
+.catalog-list,
+.footer-nav,
+.footer-links,
+.services,
+.shipping-companies {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #242424;
+}
+
+.main-navigation {}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    /*    padding-top: 22px;*/
+    padding-left: 52px;
+    /*    padding-bottom: 26px;*/
+    padding-right: 55px;
+    align-items: center;
+}
+
+textarea {
+    width: 458px;
+    height: 113px;
+    font-family: "PT Sans", Arial, sans-serif;
+}
 
 
 .skroll {
-  width: 400px;
-  background: black;
-  height: 5px;
-  margin-top: 20px;
-  position: relative;
+    width: 400px;
+    background: black;
+    height: 5px;
+    margin-top: 20px;
+    position: relative;
 }
 
 .skroll_left,
 .skroll_right {
-  position: absolute;
-  display: block;
-  width: 20px;
-  background: red;
-  height: 20px;
-  border-radius: 50%;
-  top: -8px;
-  z-index: 1;
+    position: absolute;
+    display: block;
+    width: 20px;
+    background: red;
+    height: 20px;
+    border-radius: 50%;
+    top: -8px;
+    z-index: 1;
 }
 
 .skroll_left {
-  left: 50px;
+    left: 50px;
 }
 
 .skroll_right {
-  right: 50px;
+    right: 50px;
 }
 
 .skroll_field {
-  width: 293px;
-  height: 5px;
-  background: green;
-  position: absolute;
-  left: 54px;
+    width: 293px;
+    height: 5px;
+    background: green;
+    position: absolute;
+    left: 54px;
 }
+
+.slider1 {}
+
+.slider2 {}
