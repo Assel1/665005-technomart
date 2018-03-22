@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "PT Sans", Arial, sans-serif;
     font-family: "Cuprum", Arial Narrow, sans-serif;
     font-size: 13px;
     line-height: 24px;
@@ -22,19 +21,6 @@ a {
     text-decoration: none;
 }
 
-.main-navigation {
-    width: 940px;
-    height: 60px;
-    background-color: #32425c;
-    font-family: Cuprum;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: left;
-
-}
-
 .site-navigation,
 .catalog-list,
 .footer-nav,
@@ -49,23 +35,89 @@ a {
     color: #ffffff;
 }
 
+/*Цвета фона*/
+
+.main-header {
+    height: 278px;
+    background-color: #f3f7f8;
+}
+
+.interface-header {
+    height: 42px;
+    background-color: #293449;
+}
+
+.footer-wrap {
+    height: 300px;
+    background-color: #32425c;
+    margin-bottom: 0;
+}
+
+.footer-wrap2 {
+    height: 107px;
+    background-color: #293449;
+    margin-top: 0;
+}
+
+
+
+
+/*Главная навигация*/
+
+.main-navigation {
+    width: 940px;
+    margin: auto;
+    background: #32425c;
+    box-sizing: border-box;
+
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    border-bottom: 5px solid #293449;
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    /*    font-family: Arial,
+sans-serif;*/
+}
+
+.site-navigation__link:hover {
+    background: #293449;
+}
+
+.site-navigation__link {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 23px 32px;
+    display: block;
+}
+
+/*
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
     background-color: #242424;
 }
+*/
 
-.main-navigation {}
+.popular-heading {
+    background-color: #f9f5f0;
+    height: 89px;
+    width: 940px;
+}
 
-.site-navigation {
-    display: flex;
-    justify-content: space-between;
-    /*    padding-top: 22px;*/
-    padding-left: 52px;
-    /*    padding-bottom: 26px;*/
-    padding-right: 55px;
-    align-items: center;
+.aside-index {
+    background-color: #f4f7f9;
+    width: 1200px;
+    height: 522px;
 }
 
 textarea {
@@ -114,3 +166,26 @@ textarea {
 .slider1 {}
 
 .slider2 {}
+
+.copyright {
+    margin: 0;
+}
+
+.slider {
+    width: 620px;
+    height: 266px;
+    background-image: url(../img/slider1.jpg);
+    background-image: url(../img/slider2.png);
+}
+
+.delivery-pic {
+    width: 468px;
+    height: 261px;
+    background-image: url(../img/delivery%20car.png);
+}
+
+.guarantee-pic {
+    width: 389px;
+    height: 283px;
+    background-image: url(../img/guarantee.jpg);
+}
