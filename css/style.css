@@ -38,7 +38,7 @@ a {
 /*Цвета фона*/
 
 .main-header {
-    height: 278px;
+    min-height: 278px;
     background-color: #f3f7f8;
 }
 
@@ -188,4 +188,32 @@ textarea {
     width: 389px;
     height: 283px;
     background-image: url(../img/guarantee.jpg);
+}
+
+.page-title {
+   width: 940px;
+height: 89px;
+    background-color: #f3f7f8; 
+}
+
+.filter-title {
+    width: 220px;
+height: 38px;
+    background-color: #f7f3ec;
+}
+
+.sorting {
+    width: 700px;
+height: 38px;
+background-color: #f7f3ec; 
+}
+
+.sorting-title {
+    font-family: PTSans;
+color: #000000;
+font-size: 13.01px; 
+font-weight: 400;
+line-height: 5px; 
+text-align: left;
+    text-transform: uppercase;
 }
