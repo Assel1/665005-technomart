@@ -32,7 +32,7 @@ a {
 }
 
 .site-navigation a,
-.user-navigation a {
+    {
     color: #ffffff;
 }
 
@@ -41,21 +41,27 @@ a {
 .main-header {
     min-height: 278px;
     background-color: #f3f7f8;
+    margin-bottom: 59px;
 }
 
 .interface-header {
-    height: 42px;
+    min-height: 42px;
     background-color: #293449;
+    display: flex;
+    justify-content: center;
+
+
+
 }
 
 .footer-wrap {
-    height: 300px;
+    min-height: 300px;
     background-color: #32425c;
     margin-bottom: 0;
 }
 
 .footer-wrap2 {
-    height: 107px;
+    min-height: 107px;
     background-color: #293449;
     margin-top: 0;
 }
@@ -103,19 +109,23 @@ sans-serif;*/
 
 .index-heading {
     background-color: #f9f5f0;
-    height: 89px;
+    min-height: 89px;
     width: 940px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
 }
 
 .aside-index {
     background-color: #f4f7f9;
     width: 1200px;
-    height: 522px;
+    min-height: height: 522px;
 }
 
 textarea {
     width: 458px;
-    height: 113px;
+    min-height: 113px;
     font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -167,7 +177,7 @@ textarea {
 
 .slider {
     width: 620px;
-    height: 266px;
+    min-height: 266px;
     background-image: url(../img/slider1.jpg);
     background-image: url(../img/slider2.png);
 }
@@ -186,21 +196,21 @@ textarea {
 
 .page-title {
     width: 940px;
-    height: 89px;
+    min-height: 89px;
     background-color: #f3f7f8;
     display: flex;
 }
 
 .filter-title {
     width: 220px;
-    height: 38px;
+    min-height: 38px;
     background-color: #f7f3ec;
     display: flex;
 }
 
 .sorting {
     width: 700px;
-    height: 38px;
+    min-height: 38px;
     background-color: #f7f3ec;
 }
 
@@ -371,7 +381,7 @@ textarea {
     font-weight: 400;
     line-height: 27.5px;
     text-align: left;
-    padding-left: 55px;
+
     padding-top: 13px;
 }
 
@@ -379,8 +389,8 @@ textarea {
 
 .bookmarks {
     font-family: "Cuprum", "Arial Narrow", sans-serif;
-    color: rebeccapurple;
-    /*    потом исправим на белый*/
+    color: #ffffff;
+
     font-size: 17px;
     font-weight: 400;
     line-height: 18px;
@@ -389,7 +399,7 @@ textarea {
 
 .cart {
     font-family: "Cuprum", "Arial Narrow", sans-serif;
-    color: rebeccapurple;
+    color: #ffffff;
     /*    потом исправим на белый*/
     font-size: 17px;
     font-weight: 400;
@@ -399,7 +409,7 @@ textarea {
 
 .order {
     font-family: "Cuprum", "Arial Narrow", sans-serif;
-    color: rebeccapurple;
+    color: #ffffff;
     /*    потом исправим на белый*/
     font-size: 17px;
     font-weight: 400;
@@ -414,6 +424,9 @@ textarea {
     font-style: italic;
     line-height: 23px;
     text-align: left;
+    width: 204px;
+    padding-top: 49px;
+    padding-bottom: 44px;
 }
 
 .phone {
@@ -432,6 +445,7 @@ textarea {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
+    width: 270px;
 }
 
 .usermenu {
@@ -464,13 +478,21 @@ textarea {
 
 
 .all-text {
+    display: block;
     font-family: "Cuprum", "Arial Narrow", sans-serif;
     color: #ffffff;
-    font-size: 13.99px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 5.135px;
-    text-align: center;
+    /*    line-height: 5.135px;*/
     text-transform: uppercase;
+    width: 250px;
+    /*    min-height: 38px;*/
+    text-align: center;
+    background-color: #ee3643;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 15px;
+
 }
 
 .h3-title {
@@ -563,9 +585,86 @@ textarea {
 
 .text-form {
     font-family: "Cuprum", "Arial Narrow", sans-serif;
-color: #000000;
-font-size: 17.98px; 
-font-weight: 400;
-line-height: 5.135px; 
-text-align: left;
+    color: #000000;
+    font-size: 17.98px;
+    font-weight: 400;
+    line-height: 5.135px;
+    text-align: left;
+}
+
+.catalog-items {
+    width: 700px;
+    margin: 20px auto;
+}
+
+.catalog-item {
+    position: relative;
+    display: inline-block;
+    width: 218px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.catalog-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.catalog-item .flag-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 940px;
+}
+
+.header-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+}
+
+.header-contacts-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.promo-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }

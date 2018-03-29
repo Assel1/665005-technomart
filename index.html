@@ -12,30 +12,37 @@
 <body>
     <div class="container">
         <header class="main-header">
-            <div class="header-logo">Техномарт</div>
-            <div class="interface-header">
-                <a class="main-header-logo">
-              <img src="img/logo.png" width="220px" height="47px" alt="логотип магазина «Техномарт»">
-            </a>
 
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="interface-header">
+                <div class="header-wrapper">
+
+                    <div class="header-logo">Техномарт</div>
+                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+
+                    </form>
                     <p>
                         <label class="visually-hidden" for="search">Поиск</label>
                         <input class="search" type="search" name="search" id="search" placeholder="Поиск:">
                     </p>
-                </form>
-                <a href="#" class="bookmarks">Закладки: 0</a>
-                <a href="#" class="cart">Корзина: 0</a>
-                <a href="#" class="order">Оформить заказ</a>
+                    <a href="#" class="bookmarks">Закладки: 0</a>
+                    <a href="#" class="cart">Корзина: 0</a>
+                    <a href="#" class="order">Оформить заказ</a>
+                </div>
+
             </div>
-            <h1 class="h1-text">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-            <div>
-                <span class="phone">+7 (812) 555-05-55</span>
-                <span class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-            </div>
-            <div class="user-navigation">
-                <a href="login.html " class="usermenu">Войти</a>
-                <a href="#" class="usermenu">Регистрация</a>
+            <div class="header-contacts-wrapper">
+                <div class="header-contacts">
+
+                    <h1 class="h1-text">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+                    <div class="header-adress">
+                        <span class="phone">+7 (812) 555-05-55</span><br>
+                        <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                    </div>
+                    <div class="user-navigation">
+                        <a href="login.html " class="usermenu">Войти</a>
+                        <a href="#" class="usermenu">Регистрация</a>
+                    </div>
+                </div>
             </div>
             <nav class="main-navigation">
                 <ul class="site-navigation">
@@ -54,32 +61,36 @@
         <main class="main-container">
             <h2 class="visually-hidden">демонстрационный блок</h2>
             <section class="promo-block">
-                <div class="promo-mat">
-                    <p class="promo-mat-text">Материалы</p>
-                    <a href="#" class="promo-mat-link">на любой вкус</a>
-                </div>
-                <div class="promo-tool">
-                    <p class="promo-tool-text">Инструмент</p>
-                    <a href="#" class="promo-tool-link">на все случаи</a>
+                <div class="promo-row1">
+                    <div class="promo-mat">
+                        <p class="promo-mat-text">Материалы</p>
+                        <a href="#" class="promo-mat-link">на любой вкус</a>
+                    </div>
+                    <div class="promo-tool">
+                        <p class="promo-tool-text">Инструмент</p>
+                        <a href="#" class="promo-tool-link">на все случаи</a>
 
+                    </div>
+                    <div class="promo-vehicles">
+                        <p class="promo-tool-text">Техника</p>
+                        <a href="#" class="promo-tool-link">для стройки</a>
+                    </div>
                 </div>
-                <div class="promo-vehicles">
-                    <p class="promo-tool-text">Техника</p>
-                    <a href="#" class="promo-tool-link">для стройки</a>
-                </div>
-                <div class="promo-drill">
-                    <div class="slider"></div>
-                    <p class="promo-drill-text1">Дрели</p>
-                    <p class="promo-drill-text2">Соседям на радость!</p>
-                    <a href="catalog.html" class="promo-drill-link">открыть каталог</a>
-                </div>
-                <div class="promo-discount">
-                    <p class="promo-discount-text">Скидки 50% </p>
-                    <a href="catalog.html" class="promo-discount-link">на 350 товаров</a>
-                </div>
-                <div class="promo-delivery">
-                    <p class="promo-delivery-text">Доставка </p>
-                    <a href="#" class="promo-delivery-link">бесплатно</a>
+                <div class="promo-row2">
+                    <div class="promo-drill">
+                        <div class="slider"></div>
+                        <p class="promo-drill-text1">Дрели</p>
+                        <p class="promo-drill-text2">Соседям на радость!</p>
+                        <a href="catalog.html" class="promo-drill-link">открыть каталог</a>
+                    </div>
+                    <div class="promo-discount">
+                        <p class="promo-discount-text">Скидки 50% </p>
+                        <a href="catalog.html" class="promo-discount-link">на 350 товаров</a>
+                    </div>
+                    <div class="promo-delivery">
+                        <p class="promo-delivery-text">Доставка </p>
+                        <a href="#" class="promo-delivery-link">бесплатно</a>
+                    </div>
                 </div>
             </section>
             <section class="popular-products">
@@ -172,15 +183,18 @@
                     <h2 class="text-title">популярные производители</h2>
                     <a href="#" class="all-text">все производители</a>
                 </div>
-                <!--            а здесь понадобится добавлять список для ссылок?-->
-                <a href="#"><img src="img/bosch.jpg" alt="bosch"></a>
-                <a href="#"><img src="img/Makita.jpg" alt="Makita"></a>
-                <a href="#"><img src="img/DeWALT.jpg" alt="DeWALT"></a>
-                <a href="#"><img src="img/Interskol.jpg" alt="Interskol"></a>
-                <a href="#"><img src="img/Hitachi.jpg" alt="Hitachi"></a>
-                <a href="#"><img src="img/LG.jpg" alt="LG"></a>
-                <a href="#"><img src="img/AEG.jpg" alt="AEG"></a>
-                <a href="#"><img src="img/Metabo.jpg" alt="Metabo"></a>
+                <ul class="manufacturers">
+                    <li><a href="#"><img src="img/bosch.jpg" alt="bosch"></a></li>
+                    <li><a href="#"><img src="img/Makita.jpg" alt="Makita"></a></li>
+                    <li> <a href="#"><img src="img/DeWALT.jpg" alt="DeWALT"></a></li>
+                    <li><a href="#"><img src="img/Interskol.jpg" alt="Interskol"></a></li>
+                    <li><a href="#"><img src="img/Hitachi.jpg" alt="Hitachi"></a></li>
+                    <li><a href="#"><img src="img/LG.jpg" alt="LG"></a></li>
+                    <li><a href="#"><img src="img/AEG.jpg" alt="AEG"></a></li>
+                    <li><a href="#"><img src="img/Metabo.jpg" alt="Metabo"></a></li>
+
+
+                </ul>
             </section>
             <aside class="aside-index">
                 <h2 class="hidden-content">услуги</h2>
