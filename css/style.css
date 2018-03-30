@@ -4,7 +4,7 @@ body {
 
     font-family: "Cuprum", Arial Narrow, sans-serif;
     font-size: 13px;
-/*    line-height: 24px;*/
+    /*    line-height: 24px;*/
     font-weight: 400;
     color: #000000;
 
@@ -12,10 +12,7 @@ body {
 }
 
 .container {
-    width: 1200px;
     margin: auto;
-
-
 }
 
 a {
@@ -49,9 +46,6 @@ a {
     background-color: #293449;
     display: flex;
     justify-content: center;
-
-
-
 }
 
 .footer-wrap {
@@ -65,8 +59,6 @@ a {
     background-color: #293449;
     margin-top: 0;
 }
-
-
 
 
 /*Главная навигация*/
@@ -119,8 +111,8 @@ sans-serif;*/
 
 .aside-index {
     background-color: #f4f7f9;
-    width: 1200px;
-    min-height: height: 522px;
+    min-height: 522px;
+    margin-bottom: 82px;
 }
 
 textarea {
@@ -183,15 +175,17 @@ textarea {
 }
 
 .delivery-pic {
-    width: 468px;
+/*    width: 468px;*/
     height: 261px;
-    background-image: url(../img/delivery%20car.png);
+    background: url('../img/delivery%20car.png') no-repeat top right;
+    margin: 0;
+    position: 
 }
 
 .guarantee-pic {
     width: 389px;
     height: 283px;
-    background-image: url(../img/guarantee.jpg);
+    background: url('../img/guarantee.jpg') no-repeat top right;
 }
 
 .page-title {
@@ -504,6 +498,7 @@ textarea {
     line-height: 30px;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: 37px;
 }
 
 .delivery-title {
@@ -517,14 +512,12 @@ textarea {
 }
 
 .small-text {
-
     font-family: "PTSans", sans-serif;
     color: #000000;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-
 
 }
 
@@ -535,6 +528,12 @@ textarea {
     font-weight: 700;
     line-height: 30px;
     text-align: left;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    background: #32425c;
+    border-bottom: 1px solid #4e637c;
 }
 
 .footer-logo {
@@ -542,10 +541,22 @@ textarea {
     color: #ffffff;
     font-size: 30px;
     font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    padding-left: 55px;
-    padding-top: 13px;
+/*    line-height: 30px;*/
+    text-align: center;
+/*
+    margin-left: 55px;
+    margin-top: 13px;
+*/
+    display: block;
+    text-decoration: none;
+    width: 220px;
+    height: 68px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    padding: 15px 0 ;
+    border-bottom: 5px solid #b52933;
+    margin: 0;
+    
 }
 
 .footer-links {
@@ -555,6 +566,12 @@ textarea {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer-links:last-child {
+    padding-right: 0;
 }
 
 .footer-links2 {
@@ -599,6 +616,7 @@ textarea {
 }
 
 .catalog-item {
+
     position: relative;
     display: inline-block;
     width: 218px;
@@ -608,6 +626,10 @@ textarea {
     line-height: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .catalog-item .flag {
@@ -665,21 +687,193 @@ textarea {
 
 .catalog-list {
     display: flex;
-    flex-wrap: wrap;
+    /*    flex-wrap: wrap;*/
     justify-content: space-between;
-
+    padding: 0;
+    margin-top: 26px;
+    margin-bottom: 20px;
 }
 
 .popular-products {
     width: 940px;
-    
+
 }
 
 .index-heading-wrap {
-     width: 940px;
+    width: 940px;
     display: flex;
-/*    flex-direction: column;*/
+    /*    flex-direction: column;*/
     justify-content: space-between;
-   
-   
+
+
+}
+
+.container1 {
+    width: 940px;
+    margin: auto;
+}
+
+.block-manufacturers {
+    width: 220px;
+    height: 145px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+.pic-manufacturers {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.manufacturers {
+    padding: 0;
+}
+
+.container2 {
+
+    background: #f4f8f9;
+    width: 940px;
+    margin: auto;
+}
+
+.services {
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+}
+
+.sliders {
+    width: 620px;
+    height: 285px;
+}
+
+.slider-item {
+    height: 100%;
+}
+
+.guarantee,
+.credit {
+    display: none;
+}
+
+.credit {
+    background: url('../img/credit.jpg') no-repeat top right;
+}
+
+.aside-services {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+min-height: 96px;
+    margin-bottom: 39px;
+}
+.modal-close {
+    
+}
+
+.services-wrapper {
+    display: flex;
+/*    flex-direction: row;*/
+    justify-content: space-between;
+    min-height: 356px;
+}
+
+.text1 {
+    font-family: "PTSans", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.text2 {
+    font-family: "PTSans", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.guarantee-text {
+    font-family: "PTSans", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.credit-text {
+    font-family: "PTSans", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.text3 {
+    font-family: "PTSans", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.text4 {
+    font-family: "PTSans", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-index {
+    width: 519px;
+min-height: 293px;
+}
+
+.contacts-index {
+    width: 300px;
+min-height: 158px;
+}
+
+.footer-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-adress {
+ font-family: "Cuprum", "Arial Narrow", sans-serif;
+    color: #f4f7f9;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 322px;
+height: 40px;
 }
