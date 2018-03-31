@@ -42,14 +42,15 @@ a {
 }
 
 .interface-header {
-    min-height: 42px;
+    height: 42px;
     background-color: #293449;
     display: flex;
     justify-content: center;
+    position: relative
 }
 
 .footer-wrap {
-    min-height: 300px;
+    min-height: 197px;
     background-color: #32425c;
     margin-bottom: 0;
 }
@@ -57,7 +58,7 @@ a {
 .footer-wrap2 {
     min-height: 107px;
     background-color: #293449;
-    margin-top: 0;
+    margin-top: 48px;
 }
 
 
@@ -175,11 +176,12 @@ textarea {
 }
 
 .delivery-pic {
-/*    width: 468px;*/
+/*
+    width: 468px;
     height: 261px;
-    background: url('../img/delivery%20car.png') no-repeat top right;
+*/
+    background: url('../img/delivery%20car.png') no-repeat right 69px;
     margin: 0;
-    position: 
 }
 
 .guarantee-pic {
@@ -370,13 +372,18 @@ textarea {
 
 .header-logo {
     font-family: "Cuprum", "Arial Narrow", sans-serif;
-    color: palegreen;
     font-size: 24px;
     font-weight: 400;
-    line-height: 27.5px;
-    text-align: left;
-
-    padding-top: 13px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 220px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    padding: 7px 0 ;
+    border-bottom: 5px solid #b52933; 
+    position: absolute;
 }
 
 .login-form {}
@@ -389,6 +396,7 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
+    padding-top: 13px;
 }
 
 .cart {
@@ -399,6 +407,7 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
+    padding-top: 13px;
 }
 
 .order {
@@ -409,6 +418,7 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
+    padding-top: 13px;
 }
 
 .h1-text {
@@ -421,6 +431,7 @@ textarea {
     width: 204px;
     padding-top: 49px;
     padding-bottom: 44px;
+    padding-left: 55px;
 }
 
 .phone {
@@ -440,6 +451,8 @@ textarea {
     line-height: 24px;
     text-align: center;
     width: 270px;
+    padding-top: 59px;
+    padding-bottom: 44px;
 }
 
 .usermenu {
@@ -449,6 +462,14 @@ textarea {
     font-weight: 400;
     line-height: 21px;
     text-align: left;
+    display: block;
+  width: 121px;
+  padding: 7px 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: none;
+    box-sizing: border-box;
 }
 
 .popular-title {
@@ -550,12 +571,12 @@ textarea {
     display: block;
     text-decoration: none;
     width: 220px;
-    height: 68px;
     text-transform: uppercase;
     background-color: #ee3643;
     padding: 15px 0 ;
     border-bottom: 5px solid #b52933;
     margin: 0;
+    
     
 }
 
@@ -566,8 +587,10 @@ textarea {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 59px;
     padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-links:last-child {
@@ -581,6 +604,14 @@ textarea {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 59px;
+    padding-right: 30px;
+}
+
+.footer-links2:last-child {
+    padding-right: 0;
 }
 
 .footer2-text {
@@ -590,6 +621,8 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
+    margin-top: 39px;
+    margin-left: 131px;
 }
 
 .footer2-yellow {
@@ -654,7 +687,7 @@ textarea {
 .header-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 940px;
 }
 
@@ -665,7 +698,6 @@ textarea {
 
 .header-contacts {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 940px;
 }
@@ -858,11 +890,14 @@ min-height: 158px;
 .footer-row1 {
     display: flex;
     justify-content: space-between;
+    height: 68px;
+    margin-bottom: 10px;
 }
 
 .footer-nav {
     display: flex;
     justify-content: space-between;
+   margin-top: 38px;
 }
 
 .footer-adress {
@@ -872,8 +907,35 @@ min-height: 158px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 322px;
+    padding-left: 4px;
+    width: 332px;
 height: 40px;
+}
+
+.user-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 282px;
+    padding-top: 46px;
+    padding-bottom: 67px;
+}
+
+.search-wrap {
+    margin-left: 269px;
+}
+
+.footer-nav2 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 18px;
+}
+
+.footer-row2 {
+  display: flex;
+    justify-content: space-between;  
+}
+
+.breadcrumbs {
+    
 }
