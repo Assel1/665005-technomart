@@ -513,7 +513,7 @@ textarea {
 
 }
 
-.h3-title {
+.contacts-title {
     font-family: "Cuprum", "Arial Narrow", sans-serif;
     color: #000000;
     font-size: 30px;
@@ -522,7 +522,7 @@ textarea {
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 37px;
-    margin-top: 67px;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -797,7 +797,7 @@ textarea {
 
 .sliders {
     width: 620px;
-    height: 285px;
+    min-height: 285px;
 }
 
 .slider-item {
@@ -847,6 +847,9 @@ min-height: 96px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    width: 295px;
+    margin: 0;
+    padding: 0;
 }
 
 .guarantee-text {
@@ -874,6 +877,9 @@ min-height: 96px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    width: 240px;
+    margin: 0;
+    padding: 0;
 }
 
 .text4 {
@@ -1000,4 +1006,27 @@ min-height: 1149px;
 
 .article {
     background-color: #f2f6f8;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+    margin-top: 0;
+    padding: 0;
 }
