@@ -976,9 +976,10 @@ height: 40px;
 }
 
 .search-wrap {
+    box-sizing: border-box;
     margin-left: 220px;
     display: flex;
-    padding: 14px 15px 13px 10px;
+    padding: 14px 15px 13px 50px;
     width: 270px; 
 }
 
@@ -1087,8 +1088,34 @@ min-height: 1149px;
 }
 
 .search {
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
 /*    padding-left: 34px;*/
-    position: relative; 
+    background-image: url('../img/icon-search.svg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 0px center;
+  background-color: #293449;
+	padding-left: 30px;
+    border: none;
+}
+
+::-webkit-input-placeholder { 
+    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
+}
+::-moz-placeholder {
+    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
+}
+:-ms-input-placeholder {
+    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
+}
+:-moz-placeholder {
+    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
 }
 
 .search::before {
