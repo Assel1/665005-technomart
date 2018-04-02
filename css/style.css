@@ -1103,9 +1103,11 @@ min-height: 1149px;
   background-color: transparent;
 	padding-left: 30px;
     border: none;
+    opacity: 0.3;
 }
 .search-wrap:hover {
     background-color: #212a3a;
+    opacity: 1;
 }
 
 ::-webkit-input-placeholder { 
