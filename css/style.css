@@ -398,7 +398,23 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-    padding-top: 13px;
+    padding-left: 35px;
+    position: relative; 
+}
+.bookmarks::before {
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  
+  width: 14px;
+  height: 16px;
+  
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
 }
 
 .cart {
@@ -409,7 +425,25 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-    padding-top: 13px;
+/*    padding-top: 13px;*/
+    padding-left: 35px;
+  position: relative; 
+}
+
+.cart::before {
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  
+  width: 15px;
+  height: 15px;
+  
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
 }
 
 .order {
@@ -420,7 +454,7 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-    padding-top: 13px;
+/*    padding-top: 13px;*/
 }
 
 .h1-text {
@@ -455,6 +489,8 @@ textarea {
     width: 270px;
     padding-top: 59px;
     padding-bottom: 44px;
+    display: flex;
+    flex-direction: column;
 }
 
 .usermenu {
@@ -940,7 +976,10 @@ height: 40px;
 }
 
 .search-wrap {
-    margin-left: 269px;
+    margin-left: 220px;
+    display: flex;
+    padding: 14px 15px 13px 10px;
+    width: 270px; 
 }
 
 .footer-nav2 {
@@ -1030,3 +1069,38 @@ min-height: 1149px;
     margin-top: 0;
     padding: 0;
 }
+
+.interface-cart {
+    display: flex;
+    padding: 14px 10px 13px 10px;
+}
+
+.interface-order {
+    display: flex;
+    padding: 14px 22px 13px 20px;
+    background-color: #63a63e;
+}
+
+.interface-bookmarks {
+    display: flex;
+    padding: 14px 15px 13px 17px;
+}
+
+.search {
+/*    padding-left: 34px;*/
+    position: relative; 
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
