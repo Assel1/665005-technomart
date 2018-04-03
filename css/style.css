@@ -45,7 +45,7 @@ a {
     background-color: #293449;
     display: flex;
     justify-content: center;
-    position: relative
+    position: relative;
 }
 
 .footer-wrap {
@@ -57,7 +57,7 @@ a {
 .footer-wrap2 {
     min-height: 107px;
     background-color: #293449;
-/*    margin-top: 48px;*/
+    /*    margin-top: 48px;*/
 }
 
 
@@ -174,7 +174,7 @@ textarea {
 }
 
 .delivery-pic {
-/*
+    /*
     width: 468px;
     height: 261px;
 */
@@ -276,7 +276,7 @@ textarea {
 
 .page-title-text {
     color: #32425c;
-/*    font-size: 30px;*/
+    /*    font-size: 30px;*/
     font-weight: 500;
     line-height: 30px;
     text-align: left;
@@ -383,8 +383,8 @@ textarea {
     width: 220px;
     text-transform: uppercase;
     background-color: #ee3643;
-    padding: 7px 0 ;
-    border-bottom: 5px solid #b52933; 
+    padding: 7px 0;
+    border-bottom: 5px solid #b52933;
     position: absolute;
 }
 
@@ -399,22 +399,23 @@ textarea {
     line-height: 18px;
     text-align: left;
     padding-left: 35px;
-    position: relative; 
+    position: relative;
 }
+
 .bookmarks::before {
-  content: "";
-  
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  
-  width: 14px;
-  height: 16px;
-  
-  background-image: url("../img/icon-bookmark.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+    width: 14px;
+    height: 16px;
+
+    background-image: url("../img/icon-bookmark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
 }
 
 .cart {
@@ -425,25 +426,25 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-/*    padding-top: 13px;*/
+    /*    padding-top: 13px;*/
     padding-left: 35px;
-  position: relative; 
+    position: relative;
 }
 
 .cart::before {
-  content: "";
-  
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  
-  width: 15px;
-  height: 15px;
-  
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+    width: 15px;
+    height: 15px;
+
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
 }
 
 .order {
@@ -454,7 +455,7 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-/*    padding-top: 13px;*/
+    /*    padding-top: 13px;*/
 }
 
 .h1-text {
@@ -466,7 +467,7 @@ textarea {
     text-align: left;
     width: 204px;
     padding-top: 49px;
-/*    pad ding-bottom: 44px;*/
+    /*    pad ding-bottom: 44px;*/
     padding-left: 55px;
 }
 
@@ -501,12 +502,12 @@ textarea {
     line-height: 21px;
     text-align: left;
     display: block;
-  width: 121px;
-  padding: 7px 0;
-  text-align: center;
-  text-decoration: none;
-  background-color: #ffffff;
-  border: none;
+    width: 121px;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: none;
     box-sizing: border-box;
 }
 
@@ -602,9 +603,9 @@ textarea {
     color: #ffffff;
     font-size: 30px;
     font-weight: 400;
-/*    line-height: 30px;*/
+    /*    line-height: 30px;*/
     text-align: center;
-/*
+    /*
     margin-left: 55px;
     margin-top: 13px;
 */
@@ -613,11 +614,11 @@ textarea {
     width: 220px;
     text-transform: uppercase;
     background-color: #ee3643;
-    padding: 15px 0 ;
+    padding: 15px 0;
     border-bottom: 5px solid #b52933;
     margin: 0;
-    
-    
+
+
 }
 
 .footer-links {
@@ -663,7 +664,7 @@ textarea {
     text-align: left;
     margin-top: 39px;
     padding: 0;
-  
+
 }
 
 .footer2-yellow {
@@ -686,12 +687,12 @@ textarea {
 
 .catalog-items {
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 700px;
     margin: 20px auto;
-  margin: 0;
-  list-style: none;
- margin-bottom: 25px;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 25px;
     padding: 0;
 }
 
@@ -706,7 +707,81 @@ textarea {
     line-height: 20px;
     font-weight: bold;
     text-align: center;
+
 }
+
+.catalog-item .title {
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.catalog-item .discount {
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.catalog-item .price:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid white;
+    border-left-color: #ee3643;
+}
+
+.catalog-item .actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    background-color: #63a63e;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.catalog-item .actions .bookmark {
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+
+}
+
+.catalog-item .actions {
+    display: none;
+}
+
+.catalog-item:hover .actions {
+    display: block;
+}
+
 
 .catalog-item:nth-child(4n) {
     margin-right: 0;
@@ -726,6 +801,15 @@ textarea {
 .catalog-item .flag-new {
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
+
+.catalog-item .actions {
+    display: none;
+}
+
+.catalog-item:hover .actions {
+    display: block;
+}
+
 
 .visually-hidden {
     display: none;
@@ -772,6 +856,24 @@ textarea {
     margin-top: 26px;
     margin-bottom: 20px;
 }
+
+.catalog-item .actions {
+    display: none;
+}
+
+.catalog-item:hover .actions {
+    display: block;
+}
+
+.catalog-item .image {
+    width: 218px;
+    height: 168px;
+}
+
+.catalog-item .image img {
+    max-width: 100%;
+}
+
 
 .popular-products {
     width: 940px;
@@ -853,16 +955,15 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 470px;
-min-height: 96px;
+    min-height: 96px;
     margin-bottom: 39px;
 }
-.modal-close {
-    
-}
+
+.modal-close {}
 
 .services-wrapper {
     display: flex;
-/*    flex-direction: row;*/
+    /*    flex-direction: row;*/
     justify-content: space-between;
     min-height: 356px;
 }
@@ -934,12 +1035,12 @@ min-height: 96px;
 
 .about-us-index {
     width: 519px;
-min-height: 293px;
+    min-height: 293px;
 }
 
 .contacts-index {
     width: 300px;
-min-height: 158px;
+    min-height: 158px;
 }
 
 .footer-row1 {
@@ -952,11 +1053,11 @@ min-height: 158px;
 .footer-nav {
     display: flex;
     justify-content: space-between;
-   margin-top: 38px;
+    margin-top: 38px;
 }
 
 .footer-adress {
- font-family: "Cuprum", "Arial Narrow", sans-serif;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
     color: #f4f7f9;
     font-size: 18px;
     font-weight: 400;
@@ -964,7 +1065,7 @@ min-height: 158px;
     text-align: left;
     padding-left: 4px;
     width: 332px;
-height: 40px;
+    height: 40px;
 }
 
 .user-navigation {
@@ -980,7 +1081,7 @@ height: 40px;
     margin-left: 220px;
     display: flex;
     padding: 10px 15px 10px 50px;
-    width: 270px; 
+    width: 270px;
 }
 
 .footer-nav2 {
@@ -991,8 +1092,8 @@ height: 40px;
 }
 
 .footer-row2 {
-  display: flex;
-    justify-content: space-between;  
+    display: flex;
+    justify-content: space-between;
 }
 
 .breadcrumbs {
@@ -1006,31 +1107,31 @@ height: 40px;
 }
 
 .developed {
-     margin-top: 39px;
+    margin-top: 39px;
     width: 96px;
 }
 
 .footer-social {
     margin-top: 39px;
     padding: 0;
-  
+
 }
 
 .filters {
     width: 220px;
 
-  /* Временно для сетки */
-  min-height: 762px;
+    /* Временно для сетки */
+    min-height: 762px;
 }
 
 .catalog-wrap {
     width: 700px;
-min-height: 1149px;
+    min-height: 1149px;
 }
 
 .catalog-columns {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .catalog-item-position:nth-child(3n) {
@@ -1039,9 +1140,9 @@ min-height: 1149px;
 
 .pagination-list {
     padding: 0;
-  margin: 0;
+    margin: 0;
 
-  list-style: none;
+    list-style: none;
 }
 
 .article {
@@ -1095,45 +1196,56 @@ min-height: 1149px;
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-/*    padding-left: 34px;*/
-    background-image: url('../img/icon-search.svg');
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: 0px center;
-  background-color: transparent;
-	padding-left: 30px;
-    border: none;
-    opacity: 0.3;
+    /*    padding-left: 34px;*/
 }
+
 .search-wrap:hover {
     background-color: #212a3a;
     opacity: 1;
 }
 
-::-webkit-input-placeholder { 
-    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
+::-webkit-input-placeholder {
+    color: #ffffff;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
 }
+
 ::-moz-placeholder {
-    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
+    color: #ffffff;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
 }
+
 :-ms-input-placeholder {
-    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
+    color: #ffffff;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
 }
+
 :-moz-placeholder {
-    color:#ffffff; font-family: "Cuprum", "Arial Narrow", sans-serif;
+    color: #ffffff;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
 }
 
-.search::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
 }
 
 
+.search-form {
+    box-sizing: border-box;
+    margin-left: 220px;
+    display: flex;
+    padding: 10px 15px 10px 50px;
+    width: 270px;
+}
 
+.search-icon {
+    background-image: url('../img/icon-search.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px center;
+    background-color: white;
+    padding-left: 30px;
+    border: none;
+    opacity: 0.3;
+}
