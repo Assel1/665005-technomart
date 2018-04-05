@@ -418,6 +418,7 @@ textarea {
 
 }
 
+
 .cart {
     font-family: "Cuprum", "Arial Narrow", sans-serif;
     color: #ffffff;
@@ -1198,15 +1199,11 @@ textarea {
     width: 100%;
     height: 100%;
     border: none;
-    background: #293449;
+    background: transparent;
     padding: 5px 5px 5px 50px;
     box-sizing: border-box;
 }
 
-.search-wrap:hover {
-    background-color: #212a3a;
-    opacity: 1;
-}
 
 ::-webkit-input-placeholder {
     color: #ffffff;
@@ -1235,51 +1232,38 @@ textarea {
 }
 
 
-
-
-
-
-.form-search {
+form {
     box-sizing: border-box;
     margin-left: 220px;
     width: 270px;
     height: 42px;
     position: relative;
+    background: #293449;
 }
 
-.form-search:hover .input-search {
-    background-color: #212a3a;
+form:hover svg {
+    fill-opacity: 0.9;
 }
 
-.input-search:focus {
-    background-color: #ffffff;
+form:hover {
+    background: #212a3a;
+}
+
+input:focus {
+    background: #ffffff;
     color: black;
 }
 
-
-.form-search:hover svg {
-    opacity: 1;
-}
-
-
-
-#input:focus + #svg {
+input:focus + svg {
     fill: #ee3643;
-    opacity: 1;
+    fill-opacity: 1;
 }
 
-.icon-search {
-    position: absolute;
-    top: 12px;
-    left: 17px;
-    fill: white;
-    opacity: 0.3;
-}
 
 svg {
     position: absolute;
     top: 12px;
     left: 17px;
     fill: white;
-    opacity: 0.3;
+    fill-opacity: 0.3;
 }
